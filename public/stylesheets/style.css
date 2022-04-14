@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:white;
+}
+
+.narbar{
+  front-size:16px;
+  font-weight: bold;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+  background-color:#323232!important;
+}
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: white;
+  transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+  color:white;
+}
+.navbar i{
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  color:white;
+}
+.bg-dark{
+  background-color:#323232!important;
+}
+.text{
+  color:white;
+}
+.Logo{
+  width: 70px;
+}
+.icon{
+  font-size:23px;
+  color:white;
+}
+.form-control{
+  width: 80%;
+  margin:15px;
+}
+.btn-Login{
+  margin-left:160px;
+  background-color: #323232;
+  color:white;
+}
+.btn-createAccount{
+  background-color: #323232;
+  color:white;
+}
