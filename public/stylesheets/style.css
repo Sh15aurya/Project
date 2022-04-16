@@ -1,8 +1,6 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-
-
 }
 /*Navigation*/
 .narbar{
@@ -44,7 +42,6 @@ footer h6{
 footer p{
   color: white;
 }
-
 .text{
   color:white;
 }
@@ -64,10 +61,174 @@ footer p{
   background-color: #323232;
   color:white;
 }
+.btn-Login:hover{
+  background-color: darkgray;
+  color: #323232;
+}
 .btn-createAccount{
   background-color: #323232;
   color:white;
 }
+.btn-createAccount:hover{
+  background-color: darkgray;
+  color:#323232;
+}
+/*------------------------MATEEN CSS CODE---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background: #323232;
+  font-weight: normal;
+}
+.headingTable1,.headingTable2,.headingTable3{
+  height: 10px;
+}
+.checkoutTable{
+  display: flex;
+  padding: 20px;
+}
+.sumTblHead{
+  table-layout: fixed;
+  width: 40%;
+  flex: 50%;
+}
+.summaryTBL{
+  flex: 0.25;
+  padding: 20px;
+  height: 340px;
+  border: 1px solid #323232;
+}
+.sumTblHead tr{
+  table-layout: fixed;
+}
+.summaryTBL p{
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.summaryTBL a{
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  background-color: #323232;
+  color: white;
+}
+.summaryTBL a:hover{
+  background-color: lightgray;
+  color: #323232;
+}
+td{
+  padding: 10px 5px;
+  margin-bottom: auto;
+}
+td input{
+  width: 45px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: #323232;
+  font-size: 12px;
+}
+td a:hover{
+  color: red;
+}
+
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.container-cart{
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.promo{
+  margin: auto;
+}
+.container-cart{
+  max-width: 1000px;
+  flex: 0.75;
+  height: 100px;
+  margin: 0 auto;
+}
+.summary{
+  padding-bottom: 10px;
+}
+.container-cart > h1{
+  padding: 20px 0;
+}
+.cart{
+  display: flex;
+}
+table {
+  width: 100%;
+}
+.summaryTable{
+  width: 50%;
+  border-left: 3px solid #323232;
+}
+.container-cart image{
+  width: 3.5rem;
+}
+select {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1.5vh 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: white;
+}
+.cart-total{
+  background-color: aliceblue;
+  table-layout: fixed;
+  flex: 0.25;
+  margin-left: 20px;
+  padding: 10px;
+  height: 450px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+.cart-total p{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.cart-total a{
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+}
+.cart-total a:hover{
+  background-color: red;
+}
+input {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247)
+}
+/*------------------------------------------------------------------*/
 hr{
   width: 30px;
   height: 2px;
@@ -77,6 +238,10 @@ hr{
 .btn-ShopNow{
   background-color: #323232;
   color:white;
+}
+.btn-ShopNow:hover{
+  background-color: darkgray;
+  color:#323232;
 }
 
 #home{
@@ -94,6 +259,10 @@ hr{
 .btn-BuyNow{
   background-color: #323232;
   color:white;
+}
+.btn-BuyNow:hover{
+  background-color: darkgray;
+  color:#323232;
 }
 .featuredProduct {
   cursor: pointer;
