@@ -31,7 +31,10 @@ app.get("/SignUp", function (req, response) {
   response.render("SignUp", {Title:"DesiZon"});
 
 });
+app.get("/About", function (req, response) {
+  response.render("About", {Title:"DesiZon"});
 
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
