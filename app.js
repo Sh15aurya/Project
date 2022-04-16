@@ -31,9 +31,12 @@ app.get("/SignUp", function (req, response) {
   response.render("SignUp", {Title:"DesiZon"});
 
 });
+app.get("/About", function (req, response) {
+  response.render("About", {Title:"DesiZon"});
 app.get("/cart", function (req, response) {
   response.render("cart", {Title:"DesiZon"});
 
+});
 });
 app.get("/checkout", function (req, response) {
   response.render("checkout", {Title:"DesiZon"});
