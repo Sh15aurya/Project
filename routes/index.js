@@ -17,6 +17,10 @@ app.get("/SignUp", function (req, response) {
 app.get("/About", function (req, response) {
   response.render("About", {Title:"DesiZon"});
 });
+app.get("/login", function (req, response) {
+  response.render("login", {Title:"DesiZon"});
+});
+
 
 app.get("/schoolSupplies", function(req, response){
   response.render("schoolSupplies",{Title: "DesiZon"});
