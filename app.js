@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-//var indexRouter = require('./routes/index');
+var indexRouter = require('./routes/index');
 //var usersRouter = require('./routes/users');
 
 var app = express();
@@ -22,36 +22,8 @@ app.use('/',express.static(path.join(__dirname, '/public')));
 //app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 
+app.use('/', indexRouter)
 
-app.get("/", function (req, response) {
-  response.render("index", {Title:"DesiZon"});
-
-});
-app.get("/SignUp", function (req, response) {
-  response.render("SignUp", {Title:"DesiZon"});
-
-});
-app.get("/About", function (req, response) {
-  response.render("About", {Title:"DesiZon"});
-});
-
-app.get("/schoolSupplies", function(req, response){
-  response.render("schoolSupplies",{Title: "DesiZon"});
-});
-
-app.get("/cart", function (req, response) {
-  response.render("cart", {Title:"DesiZon"});
-});
-app.get("/checkout", function (req, response) {
-  response.render("checkout", {Title:"DesiZon"});
-});
-
-
-
-
-app.get("/index", function (req, response) {
-  response.render("index", {Title:"DesiZon"});
-});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -70,6 +42,6 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-app.listen(3000,function (request, response) {
+app.listen(4000,function (request, response) {
   console.log("Serving Running!");
 });
