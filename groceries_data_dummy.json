@@ -1,0 +1,64 @@
+{
+  "fruits": [
+    {
+      "name": "Apple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/265px-Red_Apple.jpg",
+      "price": 3
+    },
+    {
+      "name": "Banana",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/320px-Bananas_white_background_DS.jpg",
+      "price": 3
+    },
+    {
+      "name": "Grapes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/320px-Table_grapes_on_white.jpg",
+      "weight": 0.1,
+      "price": 4
+    },
+    {
+      "name": "Pineapple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/286px-Pineapple_and_cross_section.jpg",
+      "price": 5
+    }
+  ],
+  "vegetables": [
+    {
+      "name": "Cabbage",
+      "image": "https://www.freepngimg.com/thumb/categories/2970.png",
+      "price": 7
+    },
+    {
+      "name": "Capsicum",
+      "image": "https://www.nicepng.com/png/detail/52-525615_green-bell-pepper-png-green-capsicum-png.png",
+      "price":2
+    },
+    {
+      "name": "Garlic",
+      "image": "https://www.freepngimg.com/thumb/garlic/2-2-garlic-transparent-thumb.png",
+      "price": 4
+    },
+    {
+      "name": "Beetroot",
+      "image": "https://pngimg.com/uploads/beet/beet_PNG28.png",
+      "price": 4
+    }
+  ],
+  "frozen_foods": [
+    {
+      "name": "Jimmy Dean Original Pancakes & Sausage on a Stick (Frozen)",
+      "image": "https://i5.walmartimages.com/asr/20edc062-de33-491e-82f6-978b6354dcba.bde03bd429e6ab24ffb1743be16871cb.jpeg",
+      "price": 4
+    },
+    {
+      "name": "Steamable Broccoli Florets",
+      "image": "https://i5.walmartimages.com/asr/d7aa23ff-3c32-45dd-9dab-0aeb1106ce45_7.18c8c8364264d5424b097d59d9818689.jpeg",
+      "price": 4
+    },
+    {
+      "name": "Green Giant Extra Sweet Corn-on-the-Cob Mini Ears",
+      "image": "https://i5.walmartimages.com/asr/efd9aeeb-349d-4631-84a1-3898feda1a57.3b96e3975d613ecdf08e556b2355ee28.jpeg",
+      "price": 6.18
+    }
+  ]
+}
