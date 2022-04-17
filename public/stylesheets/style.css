@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 /*Navigation*/
@@ -85,6 +85,10 @@ footer p{
   background-color: #323232;
   color:white;
 }
+.btn-createAccount:hover{
+  background-color: darkgray;
+  color: #323232;
+}
 hr{
   width: 30px;
   height: 2px;
@@ -94,6 +98,10 @@ hr{
 .btn-ShopNow{
   background-color: #323232;
   color:white;
+}
+.btn-ShopNow:hover{
+  background-color: darkgray;
+  color: #323232;
 }
 
 #home{
@@ -112,10 +120,13 @@ hr{
   background-color: #323232;
   color:white;
 }
+.btn-BuyNow:hover{
+  background-color: darkgray;
+  color: #323232;
+}
 .featuredProduct {
   cursor: pointer;
   margin-bottom:2rem;
-
 }
 .featuredProduct img{
   transition: 0.3s all;
@@ -362,6 +373,7 @@ span.price {
   color: grey;
 }
 .checkoutTable{
+  width: 80%;
   margin-left: 10%;
   margin-top: 6%;
 }
@@ -374,4 +386,8 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+footer.py-5.mt-5{
+  width: 110%;
+  margin-right: 0;
 }

@@ -41,13 +41,17 @@ app.get("/schoolSupplies", function(req, response){
 
 app.get("/cart", function (req, response) {
   response.render("cart", {Title:"DesiZon"});
-
-
 });
 app.get("/checkout", function (req, response) {
   response.render("checkout", {Title:"DesiZon"});
 });
 
+
+
+
+app.get("/index", function (req, response) {
+  response.render("index", {Title:"DesiZon"});
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
