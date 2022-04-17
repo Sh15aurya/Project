@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>DesiZon-Checkout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">3ssx
@@ -10,101 +10,105 @@
     <%- include('NavBar.ejs')%>
 </head>
 <body>
-<div class="container-cart">
-    <br>
-    <br>
-    <br>
-    <h1>Shopping Bag</h1>
-    <div class="cart cart-page">
-        <table class="cartTable">
-            <tr class="headingTable1">
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-            </tr>
-            <tr class="product">
-                <td>
-                    <div class="cart-info">
-                        <img src="https://i.imgur.com/pHQ3xT3.jpg" >
-                        <div>
-                            <p>Plain Black S T-shirt</p>
-                            <small>100% Cotton</small><br><br>
-                            <a href="">Remove</a>
+<section>
+
+    <div class="container-cart">
+        <br>
+        <br>
+        <br>
+        <h1>Shopping Bag</h1>
+        <div class="cart cart-page">
+            <table class="cartTable">
+                <tr class="headingTable1">
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr class="product">
+                    <td>
+                        <div class="cart-info">
+                            <img src="https://i.imgur.com/pHQ3xT3.jpg" >
+                            <div>
+                                <p>Plain Black S T-shirt</p>
+                                <small>100% Cotton</small><br><br>
+                                <a href="">Remove</a>
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$16.99</td>
-            </tr>
-            <tr class="margin">
-                <td>
-                    <div class="cart-info">
-                        <img src="/images/Shirt.jpg">
-                        <div>
-                            <p>Checked Blue Shirt</p>
-                            <small>100% Cotton</small><br><br>
-                            <a href="">Remove</a>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$16.99</td>
+                </tr>
+                <tr class="margin">
+                    <td>
+                        <div class="cart-info">
+                            <img src="/images/Shirt.jpg">
+                            <div>
+                                <p>Checked Blue Shirt</p>
+                                <small>100% Cotton</small><br><br>
+                                <a href="">Remove</a>
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$35.00</td>
-            </tr>
-            <tr class="margin">
-                <td>
-                    <div class="cart-info">
-                        <img src="/images/MaggieNoodles.jpg">
-                        <div>
-                            <p>Maggie Noodles Pack of 6</p>
-                            <small>Bringing you a classic snack directly from India</small><br><br>
-                            <a href="">Remove</a>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$35.00</td>
+                </tr>
+                <tr class="margin">
+                    <td>
+                        <div class="cart-info">
+                            <img src="/images/MaggieNoodles.jpg">
+                            <div>
+                                <p>Maggie Noodles Pack of 6</p>
+                                <small>Bringing you a classic snack directly from India</small><br><br>
+                                <a href="">Remove</a>
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$8.99</td>
-            </tr>
-        </table>
-        <table class="sumTblHead">
-            <tr class="headingTable3">
-                <th>Summary</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="summaryTBL">
-                        <p>
-                            <span>Number of items</span>
-                            <span>3</span>
-                        </p>
-                        <p>
-                            <span>Sub Total</span>
-                            <span>$60.98</span>
-                        </p>
-                        <p>
-                            <span>Tax</span>
-                            <span>$1.74</span>
-                        </p>
-                        <p>
-                            <span>Shipping</span>
-                        </p>
-                        <select>
-                            <option class="text-muted">Standard-Delivery</option>
-                            <option class="text-muted">Two-Day-Delivery</option>
-                            <option class="text-muted">Pick-Up-At-College</option>
-                        </select>
-                        <p>
-                            <span>Sub Total</span>
-                            <span>$62.72</span>
-                        </p>
-                        <li><a href="/checkout">Proceed to Checkout</a></li>
-                    </div>
-                </td>
-            </tr>
-        </table>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$8.99</td>
+                </tr>
+            </table>
+            <table class="sumTblHead">
+                <tr class="headingTable3">
+                    <th>Summary</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="summaryTBL">
+                            <p>
+                                <span>Number of items</span>
+                                <span>3</span>
+                            </p>
+                            <p>
+                                <span>Sub Total</span>
+                                <span>$60.98</span>
+                            </p>
+                            <p>
+                                <span>Tax</span>
+                                <span>$1.74</span>
+                            </p>
+                            <p>
+                                <span>Shipping</span>
+                            </p>
+                            <select>
+                                <option class="text-muted">Standard-Delivery</option>
+                                <option class="text-muted">Two-Day-Delivery</option>
+                                <option class="text-muted">Pick-Up-At-College</option>
+                            </select>
+                            <p>
+                                <span>Sub Total</span>
+                                <span>$62.72</span>
+                            </p>
+                            <li><a href="/checkout">Proceed to Checkout</a></li>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-</div>
+</section>
 </body>
-<footer>
+<footer class="cartFooter">
+
     <%- include('footer.ejs')%>
 </footer>
 </html>
