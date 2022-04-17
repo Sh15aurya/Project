@@ -164,6 +164,9 @@ hr{
   transform: translateY(0);
   opacity: 1;
 }
+.searchProduct{
+  color: #323232;
+}
 .featuredProduct img{
   transition: 0.3s all;
 }
