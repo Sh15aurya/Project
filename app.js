@@ -25,18 +25,15 @@ app.use('/',express.static(path.join(__dirname, '/public')));
 
 app.get("/", function (req, response) {
   response.render("index", {Title:"DesiZon"});
-
 });
 app.get("/SignUp", function (req, response) {
   response.render("SignUp", {Title:"DesiZon"});
-
 });
 app.get("/About", function (req, response) {
   response.render("About", {Title:"DesiZon"});
+});
 app.get("/cart", function (req, response) {
   response.render("cart", {Title:"DesiZon"});
-
-});
 });
 app.get("/checkout", function (req, response) {
   response.render("checkout", {Title:"DesiZon"});
