@@ -58,7 +58,7 @@ footer li a{
   color: darkgray;
 }
 footer li a:hover{
-  color: darkkhaki;
+  color: #FFAFAF;
 }
 .Copyright.text-nowrap{
   text-align: center;
@@ -168,7 +168,6 @@ hr{
 }
 
 /*------------------Mateen CSS CODE-------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 .cart-info{
   display: flex;
   flex-wrap: wrap;
@@ -286,34 +285,7 @@ select {
   width: 100%;
   background-color: white;
 }
-.cart-total{
-  background-color: aliceblue;
-  table-layout: fixed;
-  flex: 0.25;
-  margin-left: 20px;
-  padding: 10px;
-  height: 450px;
-  border: 1px solid silver;
-  border-radius: 5px;
-}
-.cart-total p{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-.cart-total a{
-  display: block;
-  text-align: center;
-  height: 40px;
-  line-height: 40px;
-  background-color: tomato;
-  color: white;
-  text-decoration: none;
-}
-.cart-total a:hover{
-  background-color: red;
-}
+
 input {
   border: 1px solid rgba(0, 0, 0, 0.137);
   padding: 1vh;
@@ -322,7 +294,6 @@ input {
   width: 100%;
   background-color: rgb(247, 247, 247)
 }
-
 
 .rowTotal {
   display: -ms-flexbox; /* IE10 */
@@ -438,4 +409,7 @@ footer.SocialMedia{
 }
 .cartFooter{
   margin-top: 40%;
+}
+.container-Signup{
+  margin-top: 5%;
 }
