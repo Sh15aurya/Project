@@ -34,15 +34,35 @@ footer{
   background-color:#323232!important;
 }
 footer h5{
+  text-align: center;
   color:white;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 footer h6{
-  color: white;
-}
-footer p{
-  color: white;
+  text-align: center;
+  color:darkgray;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
+footer p{
+  color: darkgray;
+}
+footer li,p,i{
+  padding-bottom: 5px;
+  text-align: center;
+}
+footer li a{
+  alignment: center;
+  color: darkgray;
+}
+footer li a:hover{
+  color: darkkhaki;
+}
+.Copyright.text-nowrap{
+  text-align: center;
+}
 .text{
   color:white;
 }
@@ -71,6 +91,9 @@ footer p{
 .form-control{
   width: 80%;
   margin:15px;
+}
+.container.newArvl p{
+  text-align: left;
 }
 .btn-Login{
   margin-left:160px;
@@ -174,7 +197,7 @@ th{
 .summaryTBL{
   flex: 0.25;
   padding: 20px;
-  height: 340px;
+  height: 360px;
   border: 1px solid #323232;
 }
 .sumTblHead tr{
@@ -390,4 +413,26 @@ span.price {
 footer.py-5.mt-5{
   width: 110%;
   margin-right: 0;
+}
+footer.py-5.mt-5.footer-one{
+  color: white;
+}
+.loginLogoO{
+ margin-left: 30%;
+}
+footer a{
+  color: white;
+}
+footer.SocialMedia{
+  align-content: center;
+  alignment: center;
+}
+.list-unstyled li{
+  alignment: center;
+}
+.footer-one.col-lg-3.col-md-6.col-10{
+  align-content: center;
+}
+.about p{
+  text-align: justify;
 }
