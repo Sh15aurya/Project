@@ -186,7 +186,39 @@ hr{
   transform: translateY(0);
   opacity: 1;
 }
+/*Login*/
+.form-control{
+  width: 80%;
+  margin:15px;
+}
+.btn-Login{
+  margin-left:180px;
+  background-color: #323232;
+  color:white;
+}
+.btn-createAccount{
+  background-color: #323232;
+  color:white;
+}
+.loginLogo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+.loginLogo img {
+  width: 100%;
+}
 
+.P_forgot{
+  text-align:center;
+  margin-top: 30px;
+}
+.P_member{
+  text-align: left;
+
+}
 /*------------------Mateen CSS CODE-------------------*/
 .cart-info{
   display: flex;
@@ -391,7 +423,39 @@ span.price {
   margin-left: 10%;
   margin-top: 6%;
 }
+/*Login*/
+.form-control{
+  width: 60%;
+  margin:15px;
+}
+.btn-Login{
+  margin-left:180px;
+  background-color: #323232;
+  color:white;
+}
+.btn-createAccount{
+  background-color: #323232;
+  color:white;
+}
+.loginLogo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+.loginLogo img {
+  width: 100%;
+}
 
+.P_forgot{
+  text-align:center;
+  margin-top: 30px;
+}
+.P_member{
+  text-align: left;
+
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .rowTotal {
@@ -407,9 +471,6 @@ footer.py-5.mt-5{
 }
 footer.py-5.mt-5.footer-one{
   color: white;
-}
-.loginLogoO{
- margin-left: 30%;
 }
 footer a{
   color: white;
