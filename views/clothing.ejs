@@ -12,47 +12,46 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-  <%- include('NavBar.ejs')%>
-  <%- include('login.ejs')%>
+<%- include('NavBar.ejs')%>
+<%- include('login.ejs')%>
 
-  
-  <section id = "featured" class="my-5 pb-5">
-    
+<section id = "featured" class="my-5 pb-5">
+
     <div class ='container text-center mt-5 py-5'>
         <br><br><br>
-        <h3>Groceries</h3>
+        <h3>Clothing</h3>
         <hr class="mx-auto">
-        <p>Have you can out our products with fair price</p>
+        <p>Need quality products at a cheaper price? You came to the right place!</p>
     </div>
     <div>
-      <ul class="nav nav-pills nav-fill mb-5 border-bottom pb-3">
-        <li class="nav-item">
-          <a class="nav-link <%= path === "fruits" ? "active" : "" %>"  href="/groceries/fruits">Fruits</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link <%= path === "vegetables" ? "active" : "" %>" href="/groceries/vegetables">Vegetables</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link <%= path === "frozen_foods" ? "active" : "" %>" href="/groceries/frozen_foods">Frozen Foods</a>
-        </li>
-      </ul>
+        <ul class="nav nav-pills nav-fill mb-5 border-bottom pb-3">
+            <li class="nav-item">
+                <a class="nav-link <%= path === "Men" ? "active" : "" %>"  href="/clothing/Men">Men</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <%= path === "Women" ? "active" : "" %>" href="/clothing/Women">Women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <%= path === "Children" ? "active" : "" %>" href="/clothing/Children">Children</a>
+            </li>
+        </ul>
         <div class ="row mx-auto container-fluid">
             <% items.forEach( item => {  %>
-              <div class="col-lg-3 col-md-4 col-12">
-                <div class="card featuredProduct text-center">
-                  <img class="img-fluid mb-3" src="<%= item.image %>" style="height: 300px; width: 500px; object-fit: contain">
-                  <div class="card-body">
-                    <h5 class="productName"><%= item.name %></h5>
-                    <h4 class="productPrice">$<%= item.price %></h4>
-                    <a href="/cart" class="btn btn-BuyNow">Add to Cart</a>
-                  </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="card featuredProduct text-center">
+                        <img class="img-fluid mb-3" src="<%= item.image %>" style="height: 300px; width: 500px; object-fit: contain">
+                        <div class="card-body">
+                            <h5 class="productName"><%= item.name %></h5>
+                            <h4 class="productPrice">$<%= item.price %></h4>
+                            <a href="/cart" class="btn btn-BuyNow">Add to Cart</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             <% })%>
         </div>
     </div>
-  </section>
-  
+</section>
+
 </body>
 
 

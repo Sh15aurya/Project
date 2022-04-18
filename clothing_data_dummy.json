@@ -1,0 +1,72 @@
+{
+  "Men": [
+    {
+      "name": "Black T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/1174/9052/products/RS100_Carbon_2c36675e-81a7-4a1b-a487-0cbe73dac45f_large.jpg?v=1583353285",
+      "price": 10
+    },
+    {
+      "name": "Blue Shirt",
+      "image": "https://res.cloudinary.com/fictive-kin/image/upload/v1/verygoods/prod/71f5d4ee3854bd4dde2955941acef45dd40e708c",
+      "price": 15
+    },
+    {
+      "name": "Blue Jeans",
+      "image": "https://res.cloudinary.com/trunk-club/image/upload/f_auto,q_auto/Blog/Mens-denim-skinny-jeans.jpg",
+      "price": 20
+    },
+    {
+      "name": "Black Cap",
+      "image": "https://i.pinimg.com/originals/f8/ac/70/f8ac705af6687e2a31a51ee833351f1d.jpg",
+      "price": 10
+    }
+  ],
+
+
+  "Women": [
+    {
+      "name": "T-Shirt",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkWzhwSBPDfXXxjYRhT3-AfhQYwh70i6tYTij7fqlqMsmOtcRpm3A1P766eJjBsfO_w_4&usqp=CAU",
+      "price": 10
+    },
+    {
+      "name": "White Shirt",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR376gdq9aaIEeQD4NUursWSmWtHEuj3EBCSUdb_0jsAtQ0y4CnoAyMXpa_C4jB6if_2xs&usqp=CAU",
+      "price":20
+    },
+    {
+      "name": "Blue Dress",
+      "image": "https://ae01.alicdn.com/kf/HTB1dZ3XByOYBuNjSsD4q6zSkFXaf/V-Neck-Lace-Knee-Length-Women-s-Dresses-With-Short-Sleeves-Dress-For-Women-Dress-Female.jpg_Q90.jpg_.webp",
+      "price": 50
+    },
+    {
+      "name": "Formal Olive Green Pant",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcffYn2qJKSdB4Kw4hYBg0q3irHXKJOabylyKbnRLAyRZ0LWsWJPAmBUoHHEnXtkJ-kNg&usqp=CAU",
+      "price": 15
+    }
+  ],
+
+
+  "Children": [
+    {
+      "name": "Boy Jeans",
+      "image": "https://www.dhresource.com/0x0/f2/albu/g8/M01/EC/07/rBVaV1zcu62AAZX1AAIs9Q6Jmq0971.jpg",
+      "price": 10
+    },
+    {
+      "name": "Boy T-shirt",
+      "image": "https://n.nordstrommedia.com/id/sr3/e3c21ca7-6c0d-45f1-b56e-5a4e75c29b6b.jpeg?h=365&w=240&dpr=2",
+      "price": 4
+    },
+    {
+      "name": "White and Blue Frock",
+      "image": "https://cdn-fsly.yottaa.net/578855e22bb0ac10350002d6/www.carters.com/v~4b.173/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw188dcdfa/productimages/3N432210.jpg?sw=800&sh=1000&sfrm=jpg&yocs=4E_4G_",
+      "price": 6.18
+    },
+    {
+      "name": "Floral Frock",
+      "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11840386/2020/5/8/fff46b5f-5057-47bb-96ec-3597dcf71a821588918409828-Wish-Karo-Baby-Girls-Satin-Frock-Dress-7701588918409121-1.jpg",
+      "price": 15
+    }
+  ]
+}
