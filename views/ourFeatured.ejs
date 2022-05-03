@@ -11,25 +11,50 @@
                 <img class ="img-fluid mb-3" src="/images/pencils.png">
                 <h5 class="productName">Pencil</h5>
                 <h4 class="productPrice">$2.00</h4>
-             <button class="btn btn-BuyNow">Add to Cart</button>
+                <form action="/cart" method="post">
+                    <input class="d-none" type="text" name="productName" value="Pencil">
+                    <input class ="d-none" type="text" name="productImage" value="/images/pencils.png">
+                    <input type="number" name="quantity" value="2">
+                    <input class="d-none" type="number" name="price" value="4">
+                    <input type="submit" class="btn btn-BuyNow" value="Add to Cart"/>
+                </form>
+
             </div>
             <div class="featuredProduct text-center col-lg-3 col-md-4 col-12">
                 <img class ="iimg-fluid mb-3" src="/images/FillerPaper.png">
                 <h5 class="productName">FillerPaper</h5>
                 <h4 class="productPrice">$2.25</h4>
-                <button class="btn btn-BuyNow">Add to Cart</button>
+                <form action="/cart" method="post">
+                    <input class="d-none" type="text" name="productName" value="FillerPaper">
+                    <input class ="d-none" type="text" name="productImage" value="/images/FillerPaper.png">
+                    <input type="number" name="quantity" value="1">
+                    <input class="d-none" type="number" name="price" value="2.25">
+                    <input type="submit" class="btn btn-BuyNow" value="Add to Cart"/>
+                </form>
             </div>
             <div class="featuredProduct text-center col-lg-3 col-md-4 col-12">
                 <img class ="img-fluid mb-3" src="/images/BicHighlighter.png">
                 <h5 class="productName">Highlighter</h5>
                 <h4 class="productPrice">$3.00</h4>
-                <button class="btn btn-BuyNow">Add to Cart</button>
+                <form action="/cart" method="post">
+                    <input class="d-none" type="text" name="productName" value="Highlighter">
+                    <input class ="d-none" type="text" name="productImage" value="/images/BicHighlighter.png">
+                    <input type="number" name="quantity" value="1">
+                    <input class="d-none" type="number" name="price" value="3">
+                    <input type="submit" class="btn btn-BuyNow" value="Add to Cart"/>
+                </form>
             </div>
             <div class="featuredProduct text-center col-lg-3 col-md-4 col-12">
                 <img class ="img-fluid mb-3" src="/images/pen.png">
                 <h5 class="productName">Pen</h5>
                 <h4 class="productPrice">$8.00</h4>
-                <button class="btn btn-BuyNow">Add to Cart</button>
+                <form action="/cart" method="post">
+                    <input class="d-none" type="text" name="productName" value="Pen">
+                    <input class ="d-none" type="text" name="productImage" value="/images/pen.png">
+                    <input type="number" name="quantity" value="1">
+                    <input class="d-none" type="number" name="price" value="8">
+                    <input type="submit" class="btn btn-BuyNow" value="Add to Cart"/>
+                </form>
             </div>
         </div>
     </div>

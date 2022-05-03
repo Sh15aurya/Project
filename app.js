@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var back = require('express-back');
+var session =require('express-session');
 
 var indexRouter = require('./routes/index');
 //var usersRouter = require('./routes/users');
@@ -18,7 +20,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/',express.static(path.join(__dirname, '/public')));
-
+app.use(session({
+  secret: 'super secret'
+}));
+app.use(back());
 //app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 
@@ -34,7 +39,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
+  console.log(err, '----------------this is error handler');
   // render the error page
   res.status(err.status || 500);
   res.render('error');

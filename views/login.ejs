@@ -8,14 +8,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <form action="/authentication/login" method="post">
                 <div class="loginLogo">
                     <img class="loginLogo" src="/images/LOGO.png">
                 </div>
-                <input type="text" class="form-control" placeholder="Email:">
-                <input type="text" class="form-control" placeholder="Password">
-                <button type="button" class="btn btn-Login">login</button>
+                <input type="text" style="width: 80%" style="display: inline-block"class="form-control" name="email" placeholder="Email:">
+                <input type="password" style="width: 80%" style="display: inline-block" class="form-control" name="password" placeholder="Password:">
+                    <input type="submit" style="margin-left: 5px" class="btn btn-Login" value="Login"/>
+                </form>
 
-                <a><p class="P_forgot">Forgot Password?</p></a>
+                <a href="/forgotPassword" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">
+                    <p class="P_forgot">Forgot Password?</p>
+                </a>
             </div>
 
             <div class="modal-footer">

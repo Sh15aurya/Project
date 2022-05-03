@@ -1,17 +1,20 @@
 var express = require('express');
 var app = express();
-var dummyData = require('../clothing_data_dummy.json')
+var dummyData = require('../dummydata.json')
 
 app.get('/Men', function(req, res, next) {
-    res.render('clothing', { items: dummyData.Men, path: 'Men' });
+    const men= dummyData.filter( data => data.category === "men")
+    res.render('clothing', { items: men, path: 'Men' });
 });
 
 app.get('/Women', function(req, res, next) {
-    res.render('clothing', { items: dummyData.Women, path: 'Women' });
+    const women= dummyData.filter( data => data.category === "women")
+    res.render('clothing', { items: women, path: 'Women' });
 });
 
 app.get('/Children', function(req, res, next) {
-    res.render('clothing', { items: dummyData.Children, path: 'Children' });
+    const children= dummyData.filter( data => data.category === "children")
+    res.render('clothing', { items:children, path: 'Children' });
 });
 
 module.exports = app;

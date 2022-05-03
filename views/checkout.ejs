@@ -14,6 +14,7 @@
 <body>
 <%- include('NavBar.ejs')%>
 <%- include('login.ejs')%>
+<%- include('forgotpassword.ejs')%>
 <table class="checkoutTable">
     <br><br><br>
     <tr>
@@ -23,8 +24,9 @@
     <tr>
         <td>
             <div class="colTotal">
+                <form action="/payment" method="post"
                 <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <input type="text" id="fname" name="fullname" placeholder="John M. Doe">
                 <label for="email"><i class="fa fa-envelope"></i> Email</label>
                 <input type="text" id="email" name="email" placeholder="john@example.com">
                 <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
@@ -66,6 +68,7 @@
                 </div>
             </div>
             <input type="submit" value="Place Order" class="btn-PlaceOrder">
+        </form>
         </td>
     </tr>
 </table>

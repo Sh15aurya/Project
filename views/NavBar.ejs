@@ -28,17 +28,24 @@
         <li class="nav-item">
           <a class="searchProduct"><i class="bi bi-search"></i>
             <div id="searchBar" class="searchBar">
-                 <form class="d-flex">
-                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <form class="d-flex" action="/search">
+                       <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
                        <button class="btn btn-Search" type="submit">Search</button>
                  </form>
              </div>
           </a>
 
           <a href="/cart"><i class="bi bi-bag-check"></i></a>
-          <a href="/login" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            ><i class="bi bi-person-fill"></i
-          ></a>
+          <% if(currentUser){ %>
+          <a href="/authentication/logout">
+            <i class="bi bi-person-fill"></i>Logout
+          </a>
+          <% }else{ %>
+            <a href="/login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="bi bi-person-fill"></i>
+            </a>
+          <% } %>
+
         </li>
       </ul>
     </div>

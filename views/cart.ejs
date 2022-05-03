@@ -14,6 +14,7 @@
 <body>
 <%- include('NavBar.ejs')%>
 <%- include('login.ejs')%>
+<%- include('forgotpassword.ejs')%>
 <div class="container-cart">
     <br><br><br><br><br>
     <h1>Shopping Bag</h1>
@@ -26,48 +27,28 @@
                 <th>Quantity</th>
                 <th>Price</th>
             </tr>
-            <tr class="product">
-                <td>
-                    <div class="cart-info">
-                        <img src="https://i.imgur.com/pHQ3xT3.jpg">
-                        <div>
-                            <p>Plain Black S T-shirt</p>
-                            <small>100% Cotton</small><br><br>
-                            <a href="">Remove</a>
+            <% cartItems.forEach(item => { %>
+                <tr class="product">
+                    <td>
+                        <div class="cart-info">
+                            <img src="<%= item.productImage %>">
+                            <div>
+                                <p><%= item.productName %></p>
+                                <form action="/cart/remove/<%= item.id %>" method="post">
+                                    <input class="mb-0" style="width: auto" type="submit" name="" value="Remove">
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$16.99</td>
-            </tr>
-            <tr class="margin">
-                <td>
-                    <div class="cart-info">
-                        <img src="/images/Shirt.jpg">
-                        <div>
-                            <p>Checked Blue Shirt</p>
-                            <small>100% Cotton</small><br><br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$35.00</td>
-            </tr>
-            <tr class="margin">
-                <td>
-                    <div class="cart-info">
-                        <img src=/images/MaggieNoodles.jpg>
-                        <div>
-                            <p class="maggie">Maggie Noodles Pack of 6</p>
-                            <small>Bringing you a classic snack directly from India</small><br><br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$8.99</td>
-            </tr>
+                    </td>
+                    <td>
+                        <form action="/cart/updateQuantity/<%= item.id %>" method="post">
+                            <input class="mb-0" type="number" name="quantity" value="<%= item.quantity %>">
+                            <input class="mb-0" style="width: auto" type="submit" name="" value="Update">
+                        </form>
+                    </td>
+                    <td>$<%= item.price * item.quantity %></td>
+                </tr>
+            <% })%>
 
 
         </table>
@@ -81,16 +62,13 @@
                     <div class="summaryTBL">
                         <p>
                             <span>Number of items</span>
-                            <span>3</span>
+                            <span><%= totalQuantity %></span>
                         </p>
                         <p>
                             <span>Sub Total</span>
-                            <span>$60.98</span>
+                            <span>$<%= totalPrice %></span>
                         </p>
-                        <p>
-                            <span>Tax</span>
-                            <span>$1.74</span>
-                        </p>
+
                         <p>
                             <span>Shipping</span>
 
@@ -102,9 +80,17 @@
                         </select>
                         <p>
                             <span>Sub Total</span>
-                            <span>$62.72</span>
+                            <span>$<%= totalPrice %></span>
                         </p>
-                        <a href="/checkout">Proceed to Checkout</a>
+                        <% if(currentUser) { %>
+                            <a href="/checkout">Proceed to Checkout</a>
+                        <% } else{ %>
+                            <a href="/login" data-bs-toggle="modal" data-bs-target="#exampleModal" class="px-2">
+                                <p> Please login </p>
+                            </a>
+
+                        <% }%>
+
                     </div>
                 </td>
 
