@@ -150,6 +150,36 @@
      "image": "/images/calculator.jpeg",
      "price": 35,
      "category": "schoolsuppliesitems"
+   },
+   {
+     "name": "Lamp",
+     "image": "/images/lamp.jpeg",
+     "price": 15,
+     "category": "schoolsuppliesitems"
+   },
+   {
+     "name": "Wooden Chair",
+     "image": "/images/chair.jpeg",
+     "price": 30,
+     "category": "schoolsuppliesitems"
+   },
+   {
+     "name": "Study Table",
+     "image": "/images/table.jpeg",
+     "price": 50,
+     "category": "schoolsuppliesitems"
+   },
+   {
+     "name": "NoteBook",
+     "image": "/images/book.jpeg",
+     "price": 5,
+     "category": "schoolsuppliesitems"
+   },
+   {
+     "name": "Scissor",
+     "image": "/images/scissors.jpeg",
+     "price": 4,
+     "category": "schoolsuppliesitems"
    }
 
 
